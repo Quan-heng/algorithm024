@@ -1,3 +1,6 @@
+//解题思路：
+//1.第一次遍历将非0元素前移，
+//2.第二次遍历0填充剩下位置。
 class Solution {
     public void moveZeroes(int[] nums) {
         int j = 0;
