@@ -3,6 +3,7 @@ class Solution {
         if(nums==null){
             return;
         }
+
         int[] tempArr = new int[nums.length];
         int step = 0;
         for (int i = 0; i < nums.length; i++) {
