@@ -4,7 +4,7 @@
 2.末位为9，置0，往前遍历加1
 3.基于2，首位为0,数组拷贝，首位置1
  */
-class Solution {
+class Solution66 {
     public int[] plusOne(int[] digits) {
         if (digits == null) {
             return null;

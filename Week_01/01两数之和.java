@@ -1,7 +1,10 @@
+import java.util.HashMap;
+import java.util.Map;
+
 /*
 思路：空间换时间，用HashMap保存遍历过的值与索引,找target-num[i]是否存在于HashMap中
 */
-class Solution {
+class Solution01 {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer,Integer> map = new HashMap<>();
         int[] result = new int[2];

@@ -1,7 +1,9 @@
+import java.util.Arrays;
+
 /*解题思路，
 从末尾开始填充数组，将num2没有比较完的元素copy到nums1的头部
 */
-class Solution {
+class Solution88 {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int length1 = m-1;
         int length2 = n-1;

@@ -1,15 +1,15 @@
 /**
  * Definition for singly-linked list.
- * public class ListNode {
+ * public class Solution02.ListNode {
  *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ *     Solution02.ListNode next;
+ *     Solution02.ListNode() {}
+ *     Solution02.ListNode(int val) { this.val = val; }
+ *     Solution02.ListNode(int val, Solution02.ListNode next) { this.val = val; this.next = next; }
  * }
  */
 //解题思路：递归
-class Solution {
+class Solution02 {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
       if (l1 == null) {
             return l2;

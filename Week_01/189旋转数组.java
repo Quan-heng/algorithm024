@@ -1,4 +1,4 @@
-class Solution {
+class Solution189 {
     public void rotate(int[] nums, int k) {
         if(nums==null){
             return;
