@@ -34,12 +34,15 @@ public class 二叉树的中序遍历94 {
     }
 
     public static void main(String[] args) {
+        TreeNode root3 = new TreeNode(4);
+
         TreeNode root = new TreeNode(1);
         TreeNode root1 = new TreeNode(2);
         TreeNode root2 = new TreeNode(3);
         root.right = root1;
-        root1.left = root2;
-        System.out.println(inorderTraversal2(root));
+        root.left = root2;
+        root3.left = root;
+        System.out.println(inorderTraversal2(root3));
 
     }
 }
