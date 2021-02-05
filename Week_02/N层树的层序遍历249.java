@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class N层树的层序遍历249 {
-    //思路，从下到下，从左到右，用queue保存每一层node,依次取出队首值
+    //思路，从上到下，从左到右，用queue保存每一层node,依次取出队首值
     public static List<List<Integer>> levelOrder(Node root) {
         List<List<Integer>> result = new ArrayList<>();
         if (root == null) {
