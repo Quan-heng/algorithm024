@@ -14,7 +14,7 @@ public class 二叉树的中序遍历94 {
         return result;
     }
 
-    //方法2：迭代，stack,左中右 ，入栈，右中左。依次弹出。
+    //方法2：迭代，stack,从下到上依次弹出。
     public static List<Integer> inorderTraversal2(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         if (root == null) {
