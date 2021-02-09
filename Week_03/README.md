@@ -72,4 +72,4 @@ def divide_conquer(problem, param1, param2, ...):
 
 * 回溯
     > 可以理解为递归的一种问题，不断地在每一层去试，每一层有不同的办法，类似于一个一个去试，看这个方法是否可行。最典型的应用是八皇后问题、数独
-     * 组合-leetcode77 https://github.com/Quan-heng/LeetCodeTraining/blob/master/src/main/java/%E7%BB%84%E5%90%8877.java
+     * [组合](https://github.com/Quan-heng/LeetCodeTraining/blob/master/src/main/java/%E7%BB%84%E5%90%8877.java) - leetcode77 
