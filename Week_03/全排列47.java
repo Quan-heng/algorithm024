@@ -17,9 +17,8 @@ public class 全排列47 {
         }
         Arrays.sort(nums);//有重复元素，需要排序，方便剪枝
         boolean[] used = new boolean[nums.length];
-        int depth = 0;
         Deque<Integer> list = new LinkedList<>();
-        dfs(nums, list, result, used, depth);
+        dfs(nums, list, result, used, 0);
         return result;
     }
 
