@@ -4,9 +4,6 @@
  * 2.都在同一侧，返回两节点中的最上层的结点
  */
 public class 二叉树的最近公共祖先236 {
-    public static void main(String[] args) {
-
-    }
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         //terminator
         if(root==null){
