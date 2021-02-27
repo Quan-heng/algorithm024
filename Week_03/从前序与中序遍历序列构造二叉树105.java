@@ -3,7 +3,7 @@
  * 利用中序遍历计算左子树的边界，从而也可以计算出前序遍历中左、右子树的边界。
  * 将边界值做为递归参数，不断地添加左右子树。
  */
-public class 从前序与中序遍历序列构造二叉树105 {
+public class  从前序与中序遍历序列构造二叉树105 {
     public static void main(String[] args) {
         int[] preorder = new int[]{3,9,20,15,7};
         int[] inorder = new int[]{9,3,15,20,7};
