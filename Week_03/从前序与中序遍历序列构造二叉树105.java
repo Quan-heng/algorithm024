@@ -45,5 +45,4 @@ public class  从前序与中序遍历序列构造二叉树105 {
        root.right = dfs(preRightBegin,preRightEnd,inRightBegin,inRightEnd,preorder,inorder);
        return root;
     }
-
 }

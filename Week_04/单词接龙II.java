@@ -1,7 +1,8 @@
 import java.util.*;
 
 /**
- * 解题思路：BFS，
+ * 解题思路：BFS
+ * 在单词接龙的基础上，需要将找到的最短路径存储下来；
  * 队列里保存相差为1的字符串列表，每次取出各列表中最后一个元素，一直到当前元素与终点元素相同。
  */
 
@@ -26,7 +27,7 @@ public class 单词接龙II {
         }
         wordList.add(beginWord);
         Set<String> wordSet = new HashSet<>(wordList);//判断元素是否存在的时间复杂度降为O(1)
-        Set<String> visited = new HashSet<>();//记录访问过的元素
+        Set<String> visited = new HashSet<>();//下层不需要访问已经保存在路径中的元素
         Deque<Deque<String>> queue = new LinkedList<>();
         Deque<String> list = new LinkedList<>();
         list.add(beginWord);
@@ -35,7 +36,7 @@ public class 单词接龙II {
         while (!queue.isEmpty()) {
             int size = queue.size();
             Boolean find = false;
-            List<String> visitList = new ArrayList<>();//记录该层符合条件的字符串，下层不需要使用
+            List<String> visitList = new ArrayList<>();//保存当前层符合条件的字符串
             for (int i = 0; i < size; i++) {
                 Deque<String> curList = queue.pop();
                 String curWord = curList.getLast();//获取尾元素
@@ -55,7 +56,6 @@ public class 单词接龙II {
                         }
                     }
                 }
-
             }
             visited.addAll(visitList);
             if (find) {//在当前层找到终点元素,没必要进行后面的查询
