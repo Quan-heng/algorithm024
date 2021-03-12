@@ -7,7 +7,7 @@ public class palindromic_substrings {
 
     /**
      * 思路同下，
-     * 时间复杂度O()
+     * 时间复杂度O(n^2)
      *
      * @param s
      * @return
