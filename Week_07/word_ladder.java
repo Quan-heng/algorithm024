@@ -4,6 +4,14 @@ import java.util.List;
 import java.util.Set;
 
 public class word_ladder {
+    /**
+     * 解题思路：
+     * 套用双向dfs模板
+     * @param beginWord
+     * @param endWord
+     * @param wordList
+     * @return
+     */
     public static int ladderLength(String beginWord, String endWord, List<String> wordList) {
         Set<String> wordSet = new HashSet<>(wordList);
         if (!wordSet.contains(endWord)) return 0;
