@@ -5,7 +5,7 @@ public class sudoku_solver {
      * @param board
      */
 
-    public static void solveSudoku(char[][] board) {
+    public static void solverSudoku(char[][] board) {
         dfs(board, 0);
     }
 
@@ -13,7 +13,7 @@ public class sudoku_solver {
         System.out.println(depth);
         int m = depth / 9;//depth对应的横坐标
         int n = depth % 9;//depth对应的纵坐标
-        if ( depth == 81) { //每个元素都dfs一次，当走到第81个元素时，说明数字已填满。
+        if ( depth == 81) { //每个位置都dfs一次，当走到第81个元素时，说明数字已填满。
             return true;
         }
         if (board[m][n] == '.') {//当前不是数字，找到合法数字，再进行下次dfs
@@ -45,14 +45,16 @@ public class sudoku_solver {
     }
 
     public static void main(String[] args) {
-        char[][] board = new char[][]{{'5','3','.','.','7','.','.','.','.'},
+        char[][] board = new char[][]{
+                {'5','3','.','.','7','.','.','.','.'},
                 {'6','.','.','1','9','5','.','.','.'},
                 {'.','9','8','.','.','.','.','6','.'},
                 {'8','.','.','.','6','.','.','.','3'},
                 {'4','.','.','8','.','3','.','.','1'},
                 {'7','.','.','.','2','.','.','.','6'},
                 {'.','6','.','.','.','.','2','8','.'},
-                {'.','.','.','4','1','9','.','.','5'},{'.','.','.','.','8','.','.','7','9'}};
+                {'.','.','.','4','1','9','.','.','5'},
+                {'.','.','.','.','8','.','.','7','9'}};
         solverSudoku(board);
 
     }
