@@ -32,6 +32,5 @@ public class reverse_only_letters {
     public static void main(String[] args) {
         String s = "a-bC-dEf-ghIj";
         System.out.println(reverseOnlyLetters(s));
-
     }
 }
